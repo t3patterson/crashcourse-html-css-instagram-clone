@@ -1,0 +1,100 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Instagram Clone</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" href="./css/styles.css">
+   </head>
+   <body>
+      <div id="app-container" class="container">
+        <header>
+          <h2>Muktek KAANS<small><br/> Intro to <code>&lt; html /&gt;</code> + <code>{ css }</code> </small></h2>
+          <p>Build a simple mockup of the instagram home page.</p>
+        </header>
+
+        <article>
+          <h4>Links</h4>
+          <div class='links'>
+            <a href="#" class="codepen-logo" target="_blank">
+              <img src="./images/codepen-logo.svg" alt="">
+            </a>
+            <br/>
+            <button href="#" class="button" id="toggle-links"><span class="plus-minus">+</span>Image Links</button>
+            <div id="image-links" class='image-links--hidden' >
+<pre><span class="code-comment">## instagram-logo ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506623669/instagram-clone/instagram-logo.png
+
+<span class="code-comment">## natgeo-logo ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506621982/instagram-clone/natgeo-logo.jpg
+
+<span class="code-comment">## gallery-img-1 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619371/instagram-clone/natgeo-01.jpg
+
+<span class="code-comment">## gallery-img-2 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619371/instagram-clone/natgeo-02.jpg
+
+<span class="code-comment">## gallery-img-4 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619373/instagram-clone/natgeo-04.jpg
+
+<span class="code-comment">## gallery-img-5 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619371/instagram-clone/natgeo-05.jpg
+
+<span class="code-comment">## gallery-img-6 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619371/instagram-clone/natgeo-06.jpg
+
+<span class="code-comment">## gallery-img-7 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619372/instagram-clone/natgeo-07.jpg
+
+<span class="code-comment">## gallery-img-8 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619372/instagram-clone/natgeo-08.jpg
+
+<span class="code-comment">## gallery-img-9 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619372/instagram-clone/natgeo-09.jpg
+
+<span class="code-comment">## gallery-img-10 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619372/instagram-clone/natgeo-10.jpg
+
+<span class="code-comment">## gallery-img-11 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619372/instagram-clone/natgeo-11.jpg
+
+<span class="code-comment">## gallery-img-12 ##</span>
+http://res.cloudinary.com/paperhat7/image/upload/v1506619372/instagram-clone/natgeo-12.jpg
+</pre>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h4>Mockup</h4>
+          <p>This is what we will build.</p>
+          <div class="monitor-container">
+            <img src="./images/monitor-thin.svg" alt="monitor" id="monitor">
+            <div class="monitor-screen-html">
+              <img src="./images/instagram-natgeo.png" alt="ig" class="demo-mockup">
+            </div>
+
+          </div>
+        </article>
+
+
+      </div>
+      <script>
+          document.querySelector('#toggle-links')
+            .addEventListener('click', function(evt){
+              console.log('hiii', evt.currentTarget)
+              var target = document.querySelector('#image-links')
+              var plusMinus = document.querySelector('.plus-minus')
+
+              if(target.className === ''){
+                target.className = 'image-links--hidden'
+                plusMinus.innerHTML = '+'
+              } else {
+                target.className = ''
+                plusMinus.innerHTML = '-'
+
+              }
+            })
+      </script>
+   </body>
+</html>

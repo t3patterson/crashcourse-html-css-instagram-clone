@@ -1,0 +1,114 @@
+@import "./imports/_normalize.scss";
+@import "./imports/_skeleton.scss";
+
+*{ box-sizing: border-box }
+
+img {
+   width: 100%;
+   display: block;
+}
+
+body{
+  background: #7986CB;
+}
+
+h2 {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  margin: -.5rem -.5rem 0 -.5rem;
+  @media screen and (min-width: 500px){
+    margin: -.5rem -2rem 0 -2rem;
+  }
+  text-align: right;
+}
+
+header {
+  text-align: right;
+  small{font-size: .5em; color: #9FA8DA;}
+  p{font-size: 1.25em;}
+  code{
+    background: initial;
+  }
+}
+
+#app-container{
+  padding: .5rem;
+  background: #fff;
+}
+
+.demo{
+  border: 8px solid #333;
+}
+
+article {
+  margin-top: 3rem;
+}
+
+h4 {
+  color: #3F51B5;
+  font-weight: 200;
+}
+
+.links{
+  padding-left: 1rem;
+}
+
+#image-links{
+  max-height: 1000px;
+  transition: .3s ease-in all;
+
+  pre{
+    overflow-x: scroll;
+    background: #F1F1F1;
+    border: 2px solid #ededed;
+    padding: 12px;
+    border-radius: 5px;
+  }
+}
+
+#image-links.image-links--hidden{
+  opacity: .2;
+  max-height: 120px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.monitor-container{
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.code-comment{
+  color: #aaa;
+}
+
+.monitor-screen-html{
+  background: rgba(255,0,0,.3);
+  width: 96.2%;
+  height: 66%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  overflow: scroll;
+}
+
+.codepen-logo{
+  background: #222;
+  width: 140px;
+  padding: 20px;
+  border-radius: 4px;
+  display: block;
+}
+
+
+.codepen-logo:hover{
+  background: #666;
+}
+
+.plus-minus{
+  font-size: 18px;
+  line-height: 10px;
+  margin-right: 10px;
+}
