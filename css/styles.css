@@ -917,7 +917,8 @@ header {
   header p {
     font-size: 1.25em; }
   header code {
-    background: initial; }
+    background: initial;
+    border: 0; }
 
 #app-container {
   padding: .5rem;
@@ -927,7 +928,12 @@ header {
   border: 8px solid #333; }
 
 article {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  padding: 0 3rem; }
+
+ul {
+  margin-left: 20px;
+  color: #999; }
 
 h4 {
   color: #3F51B5;
@@ -936,21 +942,23 @@ h4 {
 .links {
   padding-left: 1rem; }
 
+#demo-analysis,
 #image-links {
   max-height: 1000px;
   transition: .3s ease-in all; }
+  #demo-analysis pre,
   #image-links pre {
     overflow-x: scroll;
     background: #F1F1F1;
     border: 2px solid #ededed;
     padding: 12px;
     border-radius: 5px; }
-
-#image-links.image-links--hidden {
-  opacity: .2;
-  max-height: 120px;
-  overflow-x: scroll;
-  overflow-y: hidden; }
+  #demo-analysis.image-links--hidden,
+  #image-links.image-links--hidden {
+    opacity: .2;
+    max-height: 120px;
+    overflow-x: scroll;
+    overflow-y: hidden; }
 
 .monitor-container {
   position: relative;
@@ -961,23 +969,36 @@ h4 {
   color: #aaa; }
 
 .monitor-screen-html {
-  background: rgba(255, 0, 0, 0.3);
   width: 96.2%;
   height: 66%;
   position: absolute;
   top: 2%;
   left: 2%;
-  overflow: scroll; }
+  overflow: scroll;
+  opacity: .6; }
 
 .codepen-logo {
   background: #222;
-  width: 140px;
+  max-width: 150px;
+  width: 100%;
   padding: 20px;
   border-radius: 4px;
-  display: block; }
+  display: block;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 .codepen-logo:hover {
   background: #666; }
+
+#toggle-links,
+#toggle-demos {
+  margin: 30px auto;
+  display: block; }
+
+#demo-analysis img {
+  width: 90%;
+  margin: 0 auto; }
 
 .plus-minus {
   font-size: 18px;
